@@ -5,7 +5,17 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 
 
 .container {
@@ -27,6 +37,7 @@
 
 .sidebar {
     display: grid;
+    grid-template-rows: .08fr 1fr 1fr;
     background-color: #52c7b7;
     text-align: center;
     align-items: flex-start;
@@ -34,10 +45,26 @@
 }
 
 .sidebar ul {
-    display: grid;
     list-style-type: none;
 }
 
+ul.userNav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-content: space-between;
+
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+ul.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .item {
 
@@ -45,7 +72,7 @@
 
 .utility {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border: 2px solid black;
     grid-column: 2/5;
@@ -103,4 +130,32 @@
     border: 2px solid black;
     grid-column: 1/5;
     text-align: center;
+}
+
+.utilMenu {
+    display: flex;
+    gap: 10px
+}
+
+.bell {
+    size: 10px;
+}
+
+label {
+    float: left;
+    clear: both;
+}
+
+input[type=text] {
+    width: 200%;
+    padding: 5px;
+    padding-left: 30px;
+    margin: 15px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    float: left;
+    background-image: url("./svg/search.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    
 }

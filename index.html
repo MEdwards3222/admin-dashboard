@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -15,13 +16,16 @@
         
         <div class="sidebar">
             <div class="logo"> >>Do-It</div>
-            <ul>
+            <ul class="userNav">
                 <li class="menu">Home</li>
                 <li class="menu">Profile</li>
                 <li class="menu">Messages</li>
                 <li class="menu">History</li>
                 <li class="menu">Tasks</li>
                 <li class="menu">Community</li>
+            </ul>
+
+            <ul class="userInfo">
                 <li class="menu">Settings</li>
                 <li class="menu">Support</li>
                 <li class="menu">Privacy</li>
@@ -29,13 +33,16 @@
         </div>
 
         <div class="utility">
-            <form action="#">
-                <label for="search">Search:</label> 
+            
+            <form action="#"> 
                 <input type="text" name="search" id="search">
             </form>
-
-            <div class="notification">Bell icon</div>
-            <div class="userMenu">Administrator</div>
+            <div class="utilMenu">
+                <div class="notification">
+                    <img class="bell" src="./svg/bell.svg"/>
+                </div>
+                <div class="userMenu">Administrator</div>
+            </div>
         </div>
         
         <div class="welcome">
