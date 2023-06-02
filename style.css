@@ -36,7 +36,9 @@
 }
 
 .sidebar {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-template-rows: .08fr 1fr 1fr;
     background-color: #52c7b7;
     text-align: center;
@@ -60,11 +62,27 @@ ul.userNav {
     padding-bottom: 50px;
 }
 
+ul.userNav > li {
+    display: flex;
+    padding: 1.1rem;
+}
+
+ul.userNav > li:hover {
+    background-color: #3d9287;
+
+}
+
 ul.userInfo {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-self: flex-end;
 }
+
+ul.userInfo > li:hover {
+    background-color: #3d9287;
+}
+
 
 .item {
 
