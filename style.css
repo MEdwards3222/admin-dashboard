@@ -46,7 +46,7 @@ body {
     justify-content: space-between;
 }
 
-.main {
+main {
     display: grid;
     background-color: #ffedd5;
 }
