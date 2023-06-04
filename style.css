@@ -23,6 +23,27 @@ body {
 .sidebar {
     
     background-color: #fb923c;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.35rem;
+    position: relative;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 1.1rem;
+}
+
+.sidebar li:hover {
+    background-color: #fed7aa;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .main {
