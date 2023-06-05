@@ -71,14 +71,26 @@ main {
     position: relative;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+}
+
+.searchContent {
+    width: 50%;
+    align-items: center;
+}
+
 .searchBar {
-    width: 25%;
+    width: 75%;
     border: 3px solid #fdba74;
     border-right: none;
     padding: 5px;
     margin-top: 10px;
     margin-left: 10px;
-    height: 30px;
+    height: 34px;
     border-radius: 5px 0 0 5px;
     outline: none;
     font-family: 'Roboto', sans-serif;
@@ -86,8 +98,10 @@ main {
 
 .searchButton {
     width: 30px;
-    height: 30px;
+    height: 34px;
     border: 1px solid #fdba74;
+    margin-top: 10px;
+    margin-left: -5px;
     padding-bottom: 5px;
     background: #fdba74;
     text-align: center;
