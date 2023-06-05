@@ -57,6 +57,7 @@ main {
     justify-content: center;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
+    gap: 15px;
 }
 
 .logoContainer > img {
