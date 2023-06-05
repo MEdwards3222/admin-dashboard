@@ -49,6 +49,7 @@ body {
 main {
     display: grid;
     background-color: #ffedd5;
+    grid-template-rows: .1fr .2fr 1fr;
 }
 
 .logoContainer {
@@ -117,7 +118,7 @@ header {
     align-items: center;
     padding-top: 10px;
     padding-right: 10px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .notification {
@@ -135,4 +136,44 @@ header {
 
 .userName > p {
     font-weight: 500;
+}
+
+.contentControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.welcomeAvatar > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fdba74;
+}
+
+.postButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.postButtons button {
+    background-color: #fb923c;
+    border: none;
+    color: #ffedd5;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+.postButtons button:hover {
+    background-color: #fdba74;
 }
