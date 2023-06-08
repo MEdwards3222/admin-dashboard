@@ -4,76 +4,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6404c4030f.js" crossorigin="anonymous"></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="sidebar">
-            <div class="logo"> >>Do-It</div>
-            <ul class="userNav">
-                <li class="menu">Home</li>
-                <li class="menu">Profile</li>
-                <li class="menu">Messages</li>
-                <li class="menu">History</li>
-                <li class="menu">Tasks</li>
-                <li class="menu">Community</li>
-            </ul>
-
-            <ul class="userInfo">
-                <li class="menu">Settings</li>
-                <li class="menu">Support</li>
-                <li class="menu">Privacy</li>
-            </ul>
-        </div>
-
-        <div class="utility">
+    <div class="sidebar">
+        <div class="logoContainer">
+            <p>Pawsitive</p>
+            <img src="./svg/cat.svg" alt="logo">
             
-            <form action="#"> 
-                <input type="text" name="search" id="search">
-            </form>
-            <div class="utilMenu">
-                <div class="notification">
-                    <img class="bell" src="./svg/bell.svg"/>
-                </div>
-                <div class="userMenu">Administrator</div>
-            </div>
         </div>
-        
-        <div class="welcome">
-            <h3>Hi there, Administrator!</h3>
+
+        <nav class="sidebar-nav">
             <ul>
-                <li><button>New</button></li>
-                <li><button>Upload</button></li>
-                <li><button>Share</button></li>
+                <li><p>Home</p></li>
+                <li><p>Profile</p></li>
+                <li><p>History</p></li>
+                <li><p>Messages</p></li>
+                <li><p>Communities</p></li>
+                <li><p>Generate Cat Pun</p></li>
+                <li><p>Purrrchase Subscription</p></li>
             </ul>
-        </div>
 
-        <div class="workspace">
-            
-            <div class="projects">
-                <h1>projects</h1>
+            <ul>
+                <li><p>Settings</p></li>
+                <li><p>Support</p></li>
+                <li><p>Privacy</p></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <header>
+            <div class="searchContent">
+                <input type="text" class="searchBar" placeholder="Search for cat puns...">
+             <!-- <input type="text" class="fa-solid fa-magnifying-glass" placeholder="&#xf002"> for reference -->
+                <button type="submit" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
-            <div class="feed">
-                <div class="accouncements">
-                    <h1>announcements</h1>
+            <div class="userControls">
+                <div class="notification">
+                    <i class="fa-regular fa-bell fa-2xl"></i>
+                </div>
+                
+                <div class="userAvatar">
+                    <img src="./img/cat_madison.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="userName">
+                    <p>Cat Madison</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="contentControls">
+            <div class="welcome">
+                <div class="welcomeAvatar">
+                    <img src="./img/cat_madison.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="welcomeText">
+                    <p>Hello there,</p>
+                    <h1>Cat Madison!</h1>
+                    <p>@CatMaddi</p>
+                </div>
+            </div>
+
+            <div class="postButtons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="projects">
+                <h1>My Projects</h1>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>If cats taught school, they’d be called purr-fessors</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+
+                    </div>
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>A cat’s favorite color is purr-ple.</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+
+                    </div>
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>Un-fur-tunately, I’ll be unable to attend.</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>Sit up straight! Remember good paw-sture.</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>These puns are a-paw-ling.</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="color-side-bar"></div>
+
+                    <div class="text">
+                        <div class="title">
+                            <h2>Don’t fur-get to buy more cat food!</h2>
+                        </div>
+
+                        <div class="textBody">
+                            <p>Cat ipsum dolor sit amet, cougar burmese kitten. Tom turkish angora panther. Tiger burmese yet grimalkin malkin and singapura kitten. Siamese siamese ocelot but tom tabby or singapura jaguar. Bombay lynx donskoy or mouser.</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="fa-regular fa-star fa-xl"></i></button>
+                        <button><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                        <button><i class="fa-regular fa-share-from-square fa-xl"></i></button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="announce-trend">
+                <div class="announcement">
+                    <h1>My Announcements</h1>
+
+                    <div class="announcement-content">
+                        <h4>Cat puns</h4>
+                        <p>In a press release, CEO Madison states "No, I don't apologize for the puns on the website..."</p>
+                    </div>
+
+                    <div class="announcement-border"></div>
+
+                    <div class="announcement-content">
+                        <h4>Site Maintenance</h4>
+                        <p>Engineers of Pawsitive is looking into a bug where none of the website links work. For now, the site remains a demonstration of site layout...</p>
+                    </div>
+
+                    <div class="announcement-border"></div>
+
+                    <div class="announcement-content">
+                        <h4>Empty Bowl</h4>
+                        <p>CEO Madison comments on her supposedly empty bowl. "This injustice cannot stand. My voice will continue to be heard until my bowl is full..." When asked about the food around the perimeter of her bowl, she declined to comment.</p>
+                    </div>
+
+                    <div class="announcement-border"></div>
                 </div>
 
                 <div class="trending">
-                    <h1>trending</h1>
+                    <h1>Trending</h1>
+
+                    <div class="trend">
+                        <img src="./img/Mollie.JPG" alt="cat img" class="trend-img">
+                        <p>
+                            <span class="trend-tag">@FluffyMollie</span><br>
+                            <span class="trend-text">Sheds everywhere</span>
+                        </p>
+                    </div>
+
+                    <div class="trend">
+                        <img src="./img/bella.jpg" alt="cat img" class="trend-img">
+                        <p>
+                            <span class="trend-tag">@ShyBella</span><br>
+                            <span class="trend-text">I am not scared!!</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-            <p>footer</p>
-        </div>
-    </div>
+    </main>
+    
 </body>
 </html>
